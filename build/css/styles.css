@@ -1,5 +1,6 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Condiment&subset=latin-ext");
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -221,15 +222,15 @@ body {
   background-color: #ddd;
   font-size: 14px;
   line-height: 1.6;
-  font-family: "Raleway", sans-serif;
-  color: #f2f2f2;
+  font-family: "Lato", sans-serif;
+  color: #a4a4a4;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #f2f2f2;
+  color: #a4a4a4;
   font-weight: bold;
 }
 
@@ -319,43 +320,108 @@ hr {
 /* - - Mixins - - */
 /* - - Header - - */
 header {
-  padding: 15px 0 0 0;
-  background-color: #ED1C24;
+  height: 100vh;
+  background-image: url("/images/header-bg.jpg");
 }
-header .my-logo {
-  height: 50px;
-  margin: 0 auto;
+header nav {
+  width: 100%;
+  height: 112px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
 }
-
-.navbar-inverse, #navbar.navbar-collapse.collapse.in {
-  background: none;
+header nav .logo {
+  font-family: "Condiment", sans-serif;
+  font-size: 60px;
+  line-height: 112px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 0 0 20px;
+}
+header nav .logo:active, header nav .logo:focus, header nav .logo:visited {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
   border: none;
 }
-.navbar-inverse .navbar-toggle, #navbar.navbar-collapse.collapse.in .navbar-toggle {
-  border-color: white;
+header nav ul {
+  padding-left: 30px;
+  font-size: 1.8em;
+  font-weight: 300;
+  height: 112px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+header nav ul li {
+  list-style-type: none;
+  display: block;
+  margin-left: 25px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+header nav ul li a, header nav ul li a:focus, header nav ul li a:visited {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+header nav ul li:hover {
+  background-color: #4e1545;
+  text-decoration: underline;
+}
+header nav ul li.active {
+  background-color: #4e1545;
+  text-decoration: underline;
+}
+header .my-photo {
+  border-radius: 50%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a {
-  color: white;
-  border-radius: 3px;
-  border-top: 1px solid #ED1C24;
-  border-bottom: 1px solid #ED1C24;
-  transition: all 0.17s ease-in;
-  font-size: 1.4em;
+.hero {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10vh 0;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.navbar-inverse .navbar-nav > li > a:hover:hover, .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+.hero h1, .hero h2 {
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+}
+.hero h1 {
+  margin: 20px 0 0 0;
+  font-size: 42px;
+}
+.hero h2 {
+  margin: 18px 0 0 0;
+  font-size: 30px;
 }
 
 /* - - O Mnie section - - */
-.hero-img {
-  width: 100%;
-  height: calc(100vh - 87px);
-  margin: 0 auto;
-  background-image: url("https://dummyimage.com/1500%20x%20800/4FE2CF/FFBF00");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
