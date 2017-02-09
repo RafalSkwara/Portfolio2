@@ -1,6 +1,6 @@
 <em>Hello there. This repository is my first web portfolio site. For info in English, please scroll down.</em>
 
-<<h1>Rafał Skwara - Portfolio</h1>
+<h1>Rafał Skwara - Portfolio</h1>
 
 <h3>Witam. To jest moje pierwsze portfolio. Zaprojektowane i zakodowane w całości przeze mnie.</h3>
 
@@ -13,7 +13,9 @@ Wykorzystuję tu setup na bazie Gulpa. Technologie użyte przeze mnie to:
 	<li>JS</li>
 	<li>jQuery</li>
 	<li>...i pewnie jeszcze kilka (listę uzupełnię w trakcie ich dodawania).</li>
-	<li>Pakiety Gulp:
+</ul>
+<ul>
+	Pakiety Gulp:
 		<li>uglify</li>
 		<li>gulp-jade</li>
 		<li>gulp-imagemin</li>
@@ -21,8 +23,6 @@ Wykorzystuję tu setup na bazie Gulpa. Technologie użyte przeze mnie to:
 		<li>gulp-autoprefixer</li>
 		<li>gulp-plumber</li>
 		<li>gulp-webserver</li>
-	</li>
-	</li>
 </ul>
 
 
@@ -46,7 +46,9 @@ The setup is based on Gulp and the technologies I used are as follows.
 	<li>JS</li>
 	<li>jQuery</li>
 	<li>...probably some more (I'll keep adding them here as I go along.)</li>
-	<li>Gulp packages:
+</ul>
+<ul>
+	Gulp packages:
 		<li>uglify</li>
 		<li>gulp-jade</li>
 		<li>gulp-imagemin</li>
@@ -54,8 +56,6 @@ The setup is based on Gulp and the technologies I used are as follows.
 		<li>gulp-autoprefixer</li>
 		<li>gulp-plumber</li>
 		<li>gulp-webserver</li>
-	</li>
-	</li>
 </ul>
 
 I didn't include the node_modules folder to avoid over-complicating the structure.
