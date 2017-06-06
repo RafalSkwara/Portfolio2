@@ -22,7 +22,9 @@ html(lang='pl')
 				nav
 					a.logo(href="/index.html")
 						h1.logo Rafał Skwara
-					ul
+					a#menu-toggle
+						i.fa.fa-bars
+					ul.nav-list
 						li.active 
 							a#link-home.link(href="#") Home
 						li 
@@ -33,6 +35,7 @@ html(lang='pl')
 							a#link-portfolio.link(href="#portfolio") Portfolio
 						li 
 							a#link-kontakt.link(href="#kontakt") Kontakt
+					
 				section.hero
 					img.my-photo(src="./images/rafalskwara.jpg", alt="Rafał Skwara")
 					h1 Junior frontend developer
