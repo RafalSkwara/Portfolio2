@@ -23,11 +23,11 @@ script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'
         <nav><a href="/index.html" class="logo">
             <h1 class="logo">Rafał Skwara</h1></a>
           <ul>
-            <li class="active"> <a href="#">Home</a></li>
-            <li> <a href="#">O Mnie</a></li>
-            <li> <a href="#">Umiejętności</a></li>
-            <li> <a href="#">Portfolio</a></li>
-            <li> <a href="#">Kontakt</a></li>
+            <li class="active"> <a id="link-home" href="#" class="link">Home</a></li>
+            <li> <a id="link-o-mnie" href="#o-mnie" class="link">O Mnie</a></li>
+            <li> <a id="link-umiejetnosci" href="#umiejetnosci" class="link">Umiejętności</a></li>
+            <li> <a id="link-portfolio" href="#portfolio" class="link">Portfolio</a></li>
+            <li> <a id="link-kontakt" href="#kontakt" class="link">Kontakt</a></li>
           </ul>
         </nav>
         <section class="hero"><img src="/images/rafalskwara.jpg" alt="Rafał Skwara" class="my-photo">
@@ -35,7 +35,32 @@ script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js'
           <h2>Twórca. Koder. Pasjonat</h2>
         </section>
       </header>
+      <div class="content-wrapper">
+        <div class="left-column"></div>
+        <div class="right-column">
+          <section id="o-mnie" class="content">
+            <h3>O mnie</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </section>
+          <section id="umiejetnosci" class="content">
+            <h3>Umiejętności</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+          </section>
+          <section id="portfolio" class="content">
+            <h3>Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+          </section>
+          <section id="kontakt" class="content">
+            <h3>Kontakt</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+          </section>
+        </div>
+      </div>
     </div>
+    <footer class="flex-center-vertical">
+      <p>Designed and coded by Rafał Skwara</p>
+      <p>&copy; 2017</p>
+    </footer>
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/main.js"></script>
   </body>

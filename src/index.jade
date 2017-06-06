@@ -24,19 +24,37 @@ html(lang='pl')
 						h1.logo Rafał Skwara
 					ul
 						li.active 
-							a(href="#") Home
+							a#link-home.link(href="#") Home
 						li 
-							a(href="#") O Mnie
+							a#link-o-mnie.link(href="#o-mnie") O Mnie
 						li 
-							a(href="#") Umiejętności
+							a#link-umiejetnosci.link(href="#umiejetnosci") Umiejętności
 						li 
-							a(href="#") Portfolio
+							a#link-portfolio.link(href="#portfolio") Portfolio
 						li 
-							a(href="#") Kontakt
+							a#link-kontakt.link(href="#kontakt") Kontakt
 				section.hero
 					img.my-photo(src="/images/rafalskwara.jpg", alt="Rafał Skwara")
 					h1 Junior frontend developer
 					h2 Twórca. Koder. Pasjonat
+			.content-wrapper
+				.left-column
+				.right-column
+					section.content#o-mnie
+						h3 O mnie
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					section.content#umiejetnosci
+						h3 Umiejętności
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+					section.content#portfolio
+						h3 Portfolio
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+					section.content#kontakt
+						h3 Kontakt
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+		footer.flex-center-vertical
+			p Designed and coded by Rafał Skwara
+			p &copy; 2017
 
 		script(src='js/jquery-3.1.1.min.js')
 		script(src='js/main.js')

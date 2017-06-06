@@ -18,6 +18,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-compass": "^2.1.0",
     "gulp-webserver": "^0.9.1"
   },
   "scripts": {
@@ -25,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RafalSkwara/Portfolio.git"
+    "url": "git+https://github.com/RafalSkwara/Portfolio2.git"
   },
   "author": "Rafal Skwara",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RafalSkwara/Portfolio/issues"
+    "url": "https://github.com/RafalSkwara/Portfolio2/issues"
   },
-  "homepage": "https://github.com/RafalSkwara/Portfolio#readme"
+  "homepage": "https://github.com/RafalSkwara/Portfolio2#readme"
 }
