@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	$('html, body').animate({
-			scrollTop: 0
-	}, 500); // scroll to the top of the page after load
+	// $('html, body').animate({
+	// 		scrollTop: 0
+	// }, 500); // scroll to the top of the page after load
 
 
 	// make sure we know id screen is big or small.
@@ -10,10 +10,10 @@ $(document).ready(function(){
 	function screenClass() {
 	    if($(window).innerWidth() > 960) {
 	        $('body').addClass('big-screen').removeClass('small-screen');
-	        $('.nav-list').css('display', 'flex');
+	        $('.nav-list').css('display','flex');
 	    } else {
 	        $('body').addClass('small-screen').removeClass('big-screen');
-	        $('.nav-list').css('display', '');
+	        $('.nav-list').css('display','none');
 	    }
 	}
 
@@ -21,21 +21,14 @@ $(document).ready(function(){
 	screenClass();
 
 	// And recheck when window gets resized.
-	$(window).bind('resize',function(){
+	$(window).resize(function(){
 	    screenClass();
-	});
-
-
-
-	$("nav ul li").on("click", function(){
-		$("nav ul li").removeClass("active");
-		$(this).addClass("active");
 	});
 
 
 	window.onscroll = function() {
 		var bodyScroll = document.body.scrollTop;
-		var elScroll = document.documentElement.scrollTop
+		var elScroll = document.documentElement.scrollTop;
 		var $contentOffset = $('.content').offset().top;
 		var $offOMnie = $('#o-mnie').offset().top;
 		var $offUmiejetnosci = $('#umiejetnosci').offset().top;
@@ -70,35 +63,27 @@ $(document).ready(function(){
 		}//end outer if
 	}; // end onscroll
 		
-		// nav scroll logic 
-		// when nav links are clicked
-		$('.link').click(function(event){
-			event.preventDefault();
+
+		// let menu-toggle toggle the menu :)
+		$('#menu-toggle').click(function(){
+			$('.nav-list').toggle();
+		});
+
+		//click logic for nav items
+		$('.link').click(function(e){
+			e.preventDefault();
 			var newClass = $(this).attr('id').slice(5);
 			console.log(newClass);
-			if(newClass == 'home') {
-				$('html, body').animate({
-				scrollTop: 0
-			}, 500);
-			} else {
-				$('html, body').animate({
-					scrollTop: $('#' + newClass).offset().top + 1
-					}, 300);
-			} //end if
-			
-		}); //end click
-
-		//mobile menu logic
-		if ($('body').hasClass('small-screen')) {
-			$('#menu-toggle').click(function(){
+			$('html, body').animate({scrollTop: $('#'+newClass).offset().top+1} ,500);
+			if ($('body').hasClass('small-screen')){
 				$('.nav-list').toggle();
-				$('nav ul li').removeClass('active');
-				$('nav ul li').click(function(){
-					$('.nav-list').hide();
-				});
-			});	
-		} 
-		
+			}
+		});
+		$('.arrow').click(function(){
+			$('html, body').animate({scrollTop: $('#o-mnie').offset().top+1} ,500);
+		})
+
+
 		
 		
 }); // end ready

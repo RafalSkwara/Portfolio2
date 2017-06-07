@@ -334,10 +334,49 @@ hr {
       align-items: center;
 }
 
+.flex-center-horizontal {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 /* - - Header - - */
 header {
   height: 100vh;
   background-image: url("../images/header-bg.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+header .arrow {
+  margin-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+header .arrow i {
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  font-size: 45px;
+  color: #fff;
+  margin-top: 20px;
+}
+header .arrow:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.05);
+      transform: scale(1.05);
 }
 header nav {
   width: 100%;
@@ -352,8 +391,10 @@ header nav {
   -ms-flex-align: center;
       align-items: center;
   margin: 0;
+  z-index: 2;
   position: fixed;
   transition: all 0.2s ease-in;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
 header nav .logo {
   font-family: "Condiment", sans-serif;
@@ -403,8 +444,12 @@ header nav ul li:hover {
   text-decoration: underline;
 }
 header nav ul li.active {
-  background-color: #4e1545;
+  background-color: #f3eef2;
   text-decoration: underline;
+}
+header nav ul li.active a {
+  color: #111;
+  font-weight: 500;
 }
 header .my-photo {
   border-radius: 50%;
@@ -418,6 +463,7 @@ header .my-photo {
   transition: all 0.1s ease-in-out;
   box-shadow: none;
   display: none;
+  background-color: #330d2d;
 }
 #menu-toggle:hover, #menu-toggle:active {
   background-color: #4e1545;
@@ -456,6 +502,7 @@ header .my-photo {
 
 .nav-small {
   height: 80px;
+  background-color: #4e1545;
 }
 .nav-small .logo {
   line-height: 80px;
@@ -470,20 +517,22 @@ header .my-photo {
 .content-wrapper {
   display: -ms-flexbox;
   display: flex;
-}
-.content-wrapper .left-column {
-  width: 33%;
-}
-.content-wrapper .right-column {
-  width: 67%;
-  padding-right: 15px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 1vw 10vw;
 }
 
 /* - - O Mnie section - - */
 .content {
   height: 100vh;
   width: 100%;
-  padding-top: 90px;
+  padding-top: 50px;
+}
+.content h1, .content h2, .content h3, .content h4 {
+  text-align: center;
+}
+.content p {
+  font-size: 1.4em;
 }
 
 /* - - Footer - - */
@@ -502,6 +551,7 @@ footer p {
   header > nav {
     -ms-flex-direction: column;
         flex-direction: column;
+    background-color: #330d2d;
     width: 100%;
   }
   header > nav .logo {
@@ -509,9 +559,10 @@ footer p {
   }
 
   #menu-toggle {
+    border-top: 1px solid #4e1545;
     display: block;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #330d2d;
   }
 
   .nav-small > li > a.link,
@@ -528,7 +579,7 @@ footer p {
   }
 
   .nav-list {
-    display: none;
+    display: block;
     margin: 4px 0 0 0;
     padding: 0;
     width: 100%;
