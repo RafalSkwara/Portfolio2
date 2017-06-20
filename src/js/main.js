@@ -20,6 +20,7 @@ $(document).ready(function(){
 	// Fire.
 	screenClass();
 
+
 	// And recheck when window gets resized.
 	$(window).resize(function(){
 	    screenClass();
@@ -89,5 +90,5 @@ $(document).ready(function(){
 
 
 		
-		
+		$(window).scrollTop($('body').offset().top);
 }); // end ready
