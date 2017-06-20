@@ -524,7 +524,6 @@ header .my-photo {
 
 /* - - O Mnie section - - */
 .content {
-  height: 100vh;
   width: 100%;
   padding-top: 50px;
 }
@@ -537,7 +536,7 @@ header .my-photo {
 
 .item {
   max-width: 600px;
-  min-width: 500px;
+  width: 500px;
   max-height: 600px;
   margin: 10px;
 }
@@ -615,5 +614,13 @@ footer p {
   .content p {
     margin: 0 auto;
     width: 100%;
+  }
+
+  .items.flex-center-horizontal {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .items.flex-center-horizontal .item {
+    max-width: 100vw;
   }
 }
