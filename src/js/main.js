@@ -35,6 +35,10 @@ $(document).ready(function(){
 		var $offPortfolio = $('#portfolio').offset().top;
 		var $offKontakt = $('#kontakt').offset().top;
 
+
+		if($('body').hasClass('small-screen')){
+			$('.nav-list').hide();
+		}
 		//add chrinking class to nav after scroll
 		if(bodyScroll > 50 || elScroll > 50) {
 			$('nav').addClass('nav-small');
