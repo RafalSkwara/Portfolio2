@@ -90,7 +90,7 @@ $(document).ready(function(){
 
 
 		
-		$(window).scrollTop($('body').offset().top);
+		$(window).scrollTop($('html').offset().top);
 
 		$(function(){
 		$(".text").typed({
