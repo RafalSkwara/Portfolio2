@@ -49,61 +49,70 @@ html(lang='pl')
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				section.content#umiejetnosci
 					h3 Umiejętności
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+					.wrapper
+						.col-left
+							.screen
+								.top
+										p Superb Text Editor
+								.inner
+									p.text.typed-fade-out(style="white-space:pre") This is sample text
+						.line
+						.col-right
+							p Języki i technologie
+							ul.skills-list.flex-center-horizontal
+								li.flex-center-horiontal
+									img(src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", alt="logo HTML5", title="HTML5")
+								li.flex-center-horiontal 
+									img(src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg", alt="logo CSS3", title="CSS3")
+								li.flex-center-horiontal
+									img(src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", alt="logo JavaScript", title="podstawy JavaScript")
+								li.flex-center-horiontal
+									img(src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif", alt="logo jQuery", title="jQuery")
+							p Narzędzia i preprocesory
+							ul.skills-list.flex-center-horizontal
+								li.flex-center-horiontal
+									img(src="http://www.joewoodson.de/assets/logos/git.svg", alt="logo git", title="git")
+								li.flex-center-horiontal 
+									img(src="https://cdn.worldvectorlogo.com/logos/gulp.svg", alt="logo Gulp", title="Gulp")
+								li.flex-center-horiontal
+									img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2000px-Sass_Logo_Color.svg.png", alt="logo Sass", title="Sass")
+								li.flex-center-horiontal
+									img(src="images/pug.png", alt="logo Pug", title="Pug") 
 				section.content#portfolio
 					h3 Portfolio
 					p.center Oto kilka projektów, które wykonałem w trakcie nauki. Po zapoznaniu się z poniższym kodem powinieneś mniej więcej wiedzieć, w którym miejscu mojej drogi do juniora znajduję się obecnie. 
 					.items.flex-center-horizontal
 						.item
 							h3 The Cube - kostka 3D w CSS
-							p.center Prosta zabawa w CSS wykorzystująca perspektywę 3D do wyświetlania kostki, z przełączaniem między widokiem ścianek dzięki prostemu kodowi w jQuery.
-							p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='zzZXWp', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='3D Cube')
-								| See the Pen 
-								a(href='https://codepen.io/rafalskwara/pen/zzZXWp/') 3D Cube
-								|  by Rafal Skwara (
-								a(href='https://codepen.io/rafalskwara') @rafalskwara
-								| ) on 
-								a(href='https://codepen.io') CodePen
-								| .
-							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-
+							
+							.item-content
+								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='zzZXWp', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='3D Cube')
+								script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+							.description
+								p.center Prosta zabawa w CSS wykorzystująca perspektywę 3D do wyświetlania kostki, z przełączaniem między widokiem ścianek dzięki prostemu kodowi w jQuery.
 						.item
 							h3 Widget pogodowy
-							p.center Widget wykorzystujący API do pobierania aktualnej pogody w lokalizacji użytkownika. Wyposażony w funkcję zmiany jednostek temperatury i wyświetlanie ikony pogody
-							p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='RKzWZG', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Show the local weather (Free Code Camp project)')
-								| See the Pen 
-								a(href='https://codepen.io/rafalskwara/pen/RKzWZG/') Show the local weather (Free Code Camp project)
-								|  by Rafal Skwara (
-								a(href='https://codepen.io/rafalskwara') @rafalskwara
-								| ) on 
-								a(href='https://codepen.io') CodePen
-								| .
+							.item-content
+								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='RKzWZG', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Show the local weather (Free Code Camp project)')
 							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+							.description
+								p.center Widget wykorzystujący API do pobierania aktualnej pogody w lokalizacji użytkownika. Wyposażony w funkcję zmiany jednostek temperatury i wyświetlanie ikony pogody
+							
 						.item
 							h3 Animowane spinnery
-							p.center Mały zestaw animowanych spinnerów wykorzystujący animacje CSS
-							p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='KNzGdZ', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Spinners')
-								| See the Pen 
-								a(href='https://codepen.io/rafalskwara/pen/KNzGdZ/') Spinners
-								|  by Rafal Skwara (
-								a(href='https://codepen.io/rafalskwara') @rafalskwara
-								| ) on 
-								a(href='https://codepen.io') CodePen
-								| .
+							.item-content
+								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='KNzGdZ', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Spinners')
 							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+							.description
+								p.center Mały zestaw animowanych spinnerów wykorzystujący animacje CSS
+
 						.item
 							h3 Aplikacja do śledzenia kanałów Twitch.tv
-							p.center Aplikacja wykorzystująca Twitch API do zbierania informacji o kanałach z funkcją wyszukiwania na żywo, sortowaniem kanałów na nadające i nie nadające oraz wykrywająca nieistniejące kanały.
-							p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='jmNyzX', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Twitch.tv JSON Free Code Camp project')
-								| See the Pen 
-								a(href='https://codepen.io/rafalskwara/pen/jmNyzX/') Twitch.tv JSON Free Code Camp project
-								|  by Rafal Skwara (
-								a(href='https://codepen.io/rafalskwara') @rafalskwara
-								| ) on 
-								a(href='https://codepen.io') CodePen
-								| .
-							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-
+							.item-content
+								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='jmNyzX', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Twitch.tv JSON Free Code Camp project')
+								script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+							.description
+								p.center Aplikacja wykorzystująca Twitch API do zbierania informacji o kanałach z funkcją wyszukiwania na żywo, sortowaniem kanałów na nadające i nie nadające oraz wykrywająca nieistniejące kanały.
 
 
 				section.content#kontakt
@@ -136,6 +145,7 @@ html(lang='pl')
 			p &copy; 2017
 
 		script(src='js/jquery-3.1.1.min.js')
+		script(src='js/typed.min.js')
 		script(src='js/main.js')
 
 

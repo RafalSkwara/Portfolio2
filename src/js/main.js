@@ -91,4 +91,17 @@ $(document).ready(function(){
 
 		
 		$(window).scrollTop($('body').offset().top);
+
+		$(function(){
+		$(".text").typed({
+			strings: ["var <span class='violet'>developer</span> =  <span class='white'>\u007B^400 </span>\n <span class='violet'>firstName</span><span class='white'>:</span> <span class='green'>'Rafał'</span><span class='white'>,</span> \n <span class='violet'>lastName</span><span class='white'>:</span> <span class='green'>'Skwara'</span><span class='white'>,</span> \n <span class='violet'>skills</span><span class='white'>:</span> \n   <span class='violet'>HTML5</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>CSS3</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>basicJavaScript</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>jQuery</span><span class='white'>:</span> true<span class='white'>,</span> \n <span class='violet'>tools</span><span class='white'>:</span> \n   <span class='violet'>git</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>gulp</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>sass</span><span class='white'>:</span> true<span class='white'>,</span> \n   <span class='violet'>pugJade</span><span class='white'>:</span> true \n <span class='white'>\u007D</span>  ", "hire(developer)<span class='white'>;</span>^1000"],
+			typeSpeed: 2,
+	    showCursor: true,
+      cursorChar: "|",
+      loop: true,
+      loopCount: null,
+      backSpeed: 30
+		});
+	});
+
 }); // end ready
