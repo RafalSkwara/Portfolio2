@@ -1,7 +1,4 @@
 $(document).ready(function(){
-	$('html, body').animate({
-			scrollTop: 0
-	}, 500); // scroll to the top of the page after load
 
 
 
@@ -103,6 +100,5 @@ $(document).ready(function(){
       backSpeed: 30
 		});
 	});
-		$(document).scrollTop(0);
 
 }); // end ready
