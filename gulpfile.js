@@ -6,6 +6,7 @@ var gulp = require('gulp'),
 	prefix = require('gulp-autoprefixer'),
 	plumber = require('gulp-plumber'),
 	webserver = require('gulp-webserver');
+	minifycss = require('gulp-minify-css');
 
 // Scripts Task
 // Uglifies
@@ -22,7 +23,7 @@ gulp.task('scripts', function(){
 gulp.task('jade', function(){
 	gulp.src('src/*.jade')
 	.pipe(jade({
-		pretty: true
+		pretty: false
 	}))
 	.pipe(gulp.dest('./build'));
 });
@@ -39,6 +40,7 @@ gulp.task('styles', function(){
 			sass: './src/sass'
 		}))
 		.pipe(prefix({browsers: ['last 4 versions']}))
+		.pipe(minifycss())
 		.pipe(gulp.dest('./build/css/'));
 });
 

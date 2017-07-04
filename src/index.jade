@@ -61,58 +61,55 @@ html(lang='pl')
 							p Języki i technologie
 							ul.skills-list.flex-center-horizontal
 								li.flex-center-horiontal
-									img(src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg", alt="logo HTML5", title="HTML5")
+									img(src="./images/html.svg", alt="logo HTML5", title="HTML5")
 								li.flex-center-horiontal 
-									img(src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg", alt="logo CSS3", title="CSS3")
+									img(src="./images/css.svg", alt="logo CSS3", title="CSS3")
 								li.flex-center-horiontal
-									img(src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", alt="logo JavaScript", title="podstawy JavaScript")
+									img(src="./images/JavaScript-logo.png", alt="logo JavaScript", title="podstawy JavaScript")
 								li.flex-center-horiontal
-									img(src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif", alt="logo jQuery", title="jQuery")
+									img(src="./images/jQurery.gif", alt="logo jQuery", title="jQuery")
 							p Narzędzia i preprocesory
 							ul.skills-list.flex-center-horizontal
 								li.flex-center-horiontal
-									img(src="http://www.joewoodson.de/assets/logos/git.svg", alt="logo git", title="git")
+									img(src="./images/git.svg", alt="logo git", title="git")
 								li.flex-center-horiontal 
-									img(src="https://cdn.worldvectorlogo.com/logos/gulp.svg", alt="logo Gulp", title="Gulp")
+									img(src="./images/gulp.svg", alt="logo Gulp", title="Gulp")
 								li.flex-center-horiontal
-									img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2000px-Sass_Logo_Color.svg.png", alt="logo Sass", title="Sass")
+									img(src="./images/sass.svg.png", alt="logo Sass", title="Sass")
 								li.flex-center-horiontal
 									img(src="images/pug.png", alt="logo Pug", title="Pug") 
 				section.content#portfolio
 					h3 Portfolio
 					p.center Oto kilka projektów, które wykonałem w trakcie nauki. Po zapoznaniu się z poniższym kodem powinieneś mniej więcej wiedzieć, w którym miejscu mojej drogi do juniora znajduję się obecnie. 
 					.items.flex-center-horizontal
-						.item
-							h3 The Cube - kostka 3D w CSS
-							
-							.item-content
-								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='zzZXWp', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='3D Cube')
-								script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-							.description
-								p.center Prosta zabawa w CSS wykorzystująca perspektywę 3D do wyświetlania kostki, z przełączaniem między widokiem ścianek dzięki prostemu kodowi w jQuery.
-						.item
-							h3 Widget pogodowy
-							.item-content
-								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='RKzWZG', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Show the local weather (Free Code Camp project)')
-							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-							.description
-								p.center Widget wykorzystujący API do pobierania aktualnej pogody w lokalizacji użytkownika. Wyposażony w funkcję zmiany jednostek temperatury i wyświetlanie ikony pogody
-							
-						.item
-							h3 Animowane spinnery
-							.item-content
-								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='KNzGdZ', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Spinners')
-							script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-							.description
-								p.center Mały zestaw animowanych spinnerów wykorzystujący animacje CSS
 
-						.item
-							h3 Aplikacja do śledzenia kanałów Twitch.tv
-							.item-content
-								p.codepen(data-height='525', data-theme-id='30111', data-slug-hash='jmNyzX', data-default-tab='result', data-user='rafalskwara', data-embed-version='2', data-pen-title='Twitch.tv JSON Free Code Camp project')
-								script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
-							.description
-								p.center Aplikacja wykorzystująca Twitch API do zbierania informacji o kanałach z funkcją wyszukiwania na żywo, sortowaniem kanałów na nadające i nie nadające oraz wykrywająca nieistniejące kanały.
+						.item.flex-center-horizontal.weather
+							.overlay.flex-center-horizontal
+								a.button.button-github(href='#')
+									i.fa.fa-github.flex-center-horizontal
+								a.button.button-codepen(href='#')
+									i.fa.fa-codepen.flex-center-horizontal
+
+						.item.flex-center-horizontal.twitch
+							.overlay.flex-center-horizontal
+								a.button.button-github(href='#')
+									i.fa.fa-github.flex-center-horizontal
+								a.button.button-codepen(href='#')
+									i.fa.fa-codepen.flex-center-horizontal
+							
+						.item.flex-center-horizontal.weather
+							.overlay.flex-center-horizontal
+								a.button.button-github(href='#')
+									i.fa.fa-github.flex-center-horizontal
+								a.button.button-codepen(href='#')
+									i.fa.fa-codepen.flex-center-horizontal
+
+						.item.flex-center-horizontal.weather
+							.overlay.flex-center-horizontal
+								a.button.button-github(href='#')
+									i.fa.fa-github.flex-center-horizontal
+								a.button.button-codepen(href='#')
+									i.fa.fa-codepen.flex-center-horizontal
 
 
 				section.content#kontakt
