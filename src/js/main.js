@@ -1,12 +1,13 @@
 $(document).ready(function(){
-
+	//remove elements not needed on load
+	$('.cv-download').hide();
 
 
 	// make sure we know id screen is big or small.
 	// It'll come in handy later
 	// Adds and removes body class depending on screen width.
 	function screenClass() {
-	    if($(window).innerWidth() > 960) {
+	    if($(window).innerWidth() > 959) {
 	        $('body').addClass('big-screen').removeClass('small-screen');
 	        $('.nav-list').css('display','flex');
 	    } else {
@@ -33,6 +34,8 @@ $(document).ready(function(){
 		var $offUmiejetnosci = $('#umiejetnosci').offset().top;
 		var $offPortfolio = $('#portfolio').offset().top;
 		var $offKontakt = $('#kontakt').offset().top;
+		var $offCv = $('.resume').offset().top;
+		var $offHome = $('#home').offset().top;
 
 
 		if($('body').hasClass('small-screen')){
@@ -64,6 +67,13 @@ $(document).ready(function(){
 			$("nav ul li").removeClass("active");
 			$('#link-home').parent('li').addClass("active");
 		}//end outer if
+
+		if(elScroll > 50 && elScroll < $offKontakt - 200) {
+			$('.cv-download').fadeIn(200);
+		} else {
+			$('.cv-download').fadeOut(200);
+		}
+
 	}; // end onscroll
 		
 
