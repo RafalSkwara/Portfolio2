@@ -1,6 +1,6 @@
 var gulp = require('gulp'),
 	uglify = require('gulp-uglifyes'),
-	jade = require('gulp-jade'),
+	pug = require('gulp-pug'),
 	imagemin = require('gulp-imagemin'),
 	compass = require('gulp-compass'),
 	prefix = require('gulp-autoprefixer'),
@@ -20,9 +20,9 @@ gulp.task('scripts', function(){
 
 // Jade to Html
 
-gulp.task('jade', function(){
-	gulp.src('src/*.jade')
-	.pipe(jade({
+gulp.task('pug', function(){
+	gulp.src('src/*.pug')
+	.pipe(pug({
 		pretty: false
 	}))
 	.pipe(gulp.dest('./build'));
@@ -69,10 +69,10 @@ gulp.task('webserver', function() {
 gulp.task('watch', function(){
 
 	gulp.watch('src/js/*.js', ['scripts']);
-	gulp.watch('src/*.jade', ['jade']);
+	gulp.watch('src/*.pug', ['pug']);
 	gulp.watch('src/sass/**/*.sass', ['styles']);
 	gulp.watch('src/images', ['images']);
 });
 
 //Default
-gulp.task('default', ['scripts', 'styles', 'jade', 'images', 'watch', 'webserver']);
+gulp.task('default', ['scripts', 'styles', 'pug', 'images', 'watch', 'webserver']);

@@ -1,0 +1,59 @@
+doctype html
+//if lt IE 9
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js')
+
+// <![endif]
+html(lang='pl')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+		title Meet Raf | Rafał Skwara Portfolio site
+		meta(name='author', content='Rafał Skwara')
+		meta(name='description', content='Witam, nazywam się Rafał Skwara, przyszły junior front end developer. Zapraszam do zapoznania się z moimi projektami.')
+		meta(name='keywords', content='frontend,developer,junior frontend,Rafał Skwara,')
+		link(rel='shortcut icon', href='favicon.ico', type='image/vnd.microsoft.icon')
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel='stylesheet', href='css/styles.css?v=1.0')
+		meta(name="theme-color" content="#4e1545")
+
+	body
+		a.cv-download(href="cv/Rafal_Skwara_CV.pdf" download title="Download CV")
+			p.cv-paragraph Download CV
+
+			i.fa.fa-file-pdf-o
+		.page-wrapper#home
+
+			//- - - Header - - -//
+
+			include includes/header
+			//- - - Content - - -//
+			.content-wrapper
+			
+				//- - - About section - - -//
+				include includes/about
+				
+				//- - - Skills section - - -//
+				include includes/skills
+
+				//- - - Projects section - - -//
+				include includes/projects
+
+				//- - - Contact section - - -//
+				include includes/contact
+
+				
+		footer.flex-center-vertical
+			p Designed and coded by Rafał Skwara
+			p &copy; 2017
+		
+		//- Modals
+
+		include ./includes/modals
+		
+
+		script(src='js/jquery-3.1.1.min.js')
+		script(src='js/typed.min.js')
+		script(src='js/main.1.js')
+
+
